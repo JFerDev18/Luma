@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <script>(function () { try { var t = localStorage.getItem("luma-theme") === "dark" ? "dark" : "light"; document.documentElement.setAttribute("data-theme", t); } catch (e) { } })();</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tobilleras | LUMA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Playfair+Display:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/filters.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <script defer src="js/data/products.js"></script>
+    <script defer src="js/app.js"></script>
+    <script defer src="js/filters.js"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner"><button class="icon-button menu-button" id="open-menu"
+                aria-label="Abrir menú">☰</button><a class="brand" href="index.html">LU<span>•</span>MA</a>
+            <nav class="nav"><a href="index.html">Colecciones</a><a href="aretes.html">Aretes</a><a
+                    href="collares.html">Collares</a><a href="pulseras.html">Pulseras</a><a class="active"
+                    href="tobilleras.html">Tobilleras</a><a href="nosotros.html">Nosotros</a><a
+                    href="contacto.html">Contacto</a></nav>
+            <div class="header-actions"><button class="theme-toggle" type="button" aria-label="Modo oscuro"><span
+                        class="theme-toggle-thumb"></span></button><button class="theme-toggle theme-toggle-icon"
+                    type="button" aria-label="Cambiar modo claro/oscuro"><span class="theme-icon-sun"
+                        aria-hidden="true">☀</span><span class="theme-icon-moon" aria-hidden="true">☾</span></button>
+
+            </div>
+    </header>
+    <div id="drawer-backdrop" class="drawer-backdrop"></div>
+    <aside id="drawer" class="drawer">
+        <div class="drawer-head"><a class="brand" href="index.html">LU<span>•</span>MA</a><button id="close-menu"
+                class="icon-button" aria-label="Cerrar menú">×</button></div>
+        <nav><a href="index.html">Colecciones</a><a href="aretes.html">Aretes</a><a href="collares.html">Collares</a><a
+                href="pulseras.html">Pulseras</a><a class="active" href="tobilleras.html">Tobilleras</a><a
+                href="nosotros.html">Nosotros</a><a href="contacto.html">Contacto</a></nav>
+        <div class="drawer-foot">
+            <span>Modo oscuro</span>
+            <button class="theme-toggle" type="button" aria-label="Modo oscuro"><span
+                    class="theme-toggle-thumb"></span></button>
+        </div>
+    </aside>
+    <main>
+        <section class="page-hero" style="--hero-image:url('../assets/img/TOBILLERAS/hamsa-ojo-azul-onix-1 - copia.png')">
+            <div><span class="eyebrow">Colección LUMA</span>
+                <h1>Tobilleras</h1>
+            </div>
+        </section>
+        <section class="section container">
+            <div class="listing-toolbar">
+                <div class="section-heading"><span class="eyebrow">Joyas con intención</span>
+                    <h2>Tobilleras que iluminan tu estilo</h2>
+                </div>
+                <p data-product-count>1 Producto</p>
+            </div>
+
+            <div class="tabs" role="tablist">
+                <div class="tabs-left">
+                    <button class="filter-mobile-toggle" type="button" aria-haspopup="true" aria-expanded="false"
+                        aria-controls="filter-groups"><span class="filter-mobile-icon"
+                            aria-hidden="true">⚗</span><span>Filtrar</span></button>
+                    <div class="filter-groups" id="filter-groups">
+                        <div class="filter-group" data-filter-group="grupo1">
+                            <button data-tags="contemporaneas">Contemporáneas<span class="tab-remove"
+                                    aria-label="Quitar filtro">×</span></button>
+                            <button data-tags="culturales">Culturales<span class="tab-remove"
+                                    aria-label="Quitar filtro">×</span></button>
+                        </div>
+                        <div class="filter-group" data-filter-group="grupo2">
+                            <button data-tags="damas">Damas<span class="tab-remove"
+                                    aria-label="Quitar filtro">×</span></button>
+                            <button data-tags="caballeros">Caballeros<span class="tab-remove"
+                                    aria-label="Quitar filtro">×</span></button>
+                            <button data-tags="ninos">Niños<span class="tab-remove"
+                                    aria-label="Quitar filtro">×</span></button>
+                        </div>
+                        <div class="filter-group" data-filter-group="grupo3">
+                            <button data-tags="verano">Verano<span class="tab-remove"
+                                    aria-label="Quitar filtro">×</span></button>
+                            <button data-tags="otoño">Otoño<span class="tab-remove"
+                                    aria-label="Quitar filtro">×</span></button>
+                            <button data-tags="invierno">Invierno<span class="tab-remove"
+                                    aria-label="Quitar filtro">×</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-sort">
+                    <button class="filter-sort-button" type="button" aria-haspopup="true" aria-expanded="false"><span
+                            class="filter-sort-icon" aria-hidden="true">⚗</span><span
+                            data-filter-sort-label="">Ordenar</span></button>
+                    <div class="filter-sort-menu">
+                        <button type="button" data-sort="price-asc">Menor a mayor precio</button>
+                        <button type="button" data-sort="price-desc">Mayor a menor precio</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-grid" data-product-grid>
+
+                <article class="product-card" data-tags="verano damas contemporaneas">
+                    <a href="producto.html?producto=tobillera-amor-eterno">
+                        <img src="assets/img/tobillera-amor-eterno.png" alt="Tobillera Amor Eterno">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Tobillera Amor Eterno</span>
+                            <span class="product-card-overlay-desc">Una pieza delicada que simboliza un amor eterno para
+                                acompañarte en cada momento.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Tobillera Amor Eterno</h3>
+                        <p>S/. 65.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card" data-tags="verano damas tobilleras contemporaneas"><a
+                        href="producto.html?producto=tobillera-ojo-protector-onix"><img
+                            src="assets/img/tobilleras/ojo-protector-onix-1.png" alt="Tobillera Ojo Protector Ónix">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Tobillera Ojo Protector Ónix</span>
+                            <span class="product-card-overlay-desc">Un amuleto de ónix y destellos dorados que cuida
+                                cada paso con elegancia protectora.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Tobillera Ojo Protector Ónix</h3>
+                        <p>S/. 48.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card" data-tags="verano damas tobilleras contemporaneas"><a
+                        href="producto.html?producto=tobillera-inicial-perlas-corazon"><img
+                            src="assets/img/tobilleras/inicial-perlas-corazon-1.png"
+                            alt="Tobillera Inicial Perlas Corazón">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Tobillera Inicial Perlas Corazón</span>
+                            <span class="product-card-overlay-desc">Un deslumbrante encuentro de perlas, tonos naturales
+                                y un corazón dorado lleno de identidad.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Tobillera Inicial Perlas Corazón</h3>
+                        <p>S/. 52.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card" data-tags="verano damas tobilleras contemporaneas"><a
+                        href="producto.html?producto=tobillera-corazon-turquesa-verano"><img
+                            src="assets/img/tobilleras/corazon-turquesa-verano-1.png"
+                            alt="Tobillera Corazón Turquesa Verano">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Tobillera Corazón Turquesa Verano</span>
+                            <span class="product-card-overlay-desc">Un soplo de brisa turquesa y destellos dorados
+                                coronados por un tierno corazón de acero.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Tobillera Corazón Turquesa Verano</h3>
+                        <p>S/. 46.00</p>
+                    </div>
+                </article>
+
+
+                <article class="product-card" data-tags="verano damas tobilleras contemporaneas"><a
+                        href="producto.html?producto=tobillera-hamsa-ojo-azul-onix"><img
+                            src="assets/img/tobilleras/hamsa-ojo-azul-onix-1.png" alt="Tobillera Hamsa Ojo Azul Ónix">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Tobillera Hamsa Ojo Azul Ónix</span>
+                            <span class="product-card-overlay-desc">Un sagrado amuleto de ónix, Hamsa y ojo turco que
+                                cuida cada paso con estilo místico.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Tobillera Hamsa Ojo Azul Ónix</h3>
+                        <p>S/. 49.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card" data-tags="invierno damas tobilleras contemporaneas"><a
+                        href="producto.html?producto=tobillera-arbol-vida-onix-opalo"><img
+                            src="assets/img/tobilleras/arbol-vida-onix-opalo-1.png"
+                            alt="Tobillera Árbol de la Vida Ónix Ópalo">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Tobillera Árbol de la Vida Ónix Ópalo</span>
+                            <span class="product-card-overlay-desc">Un sagrado Árbol de la Vida rodeado de ónix,
+                                amatista y destellos de protección mística.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Tobillera Árbol de la Vida Ónix Ópalo</h3>
+                        <p>S/. 54.00</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div><a class="brand" href="index.html">LU<span>•</span>MA</a>
+                    <p>Joyería artesanal que celebra la belleza de las piedras, los detalles y las historias que nos
+                        acompañan.</p>
+                </div>
+                <div>
+                    <h3>Explorar</h3><a href="aretes.html">Aretes</a><a href="collares.html">Collares</a><a
+                        href="pulseras.html">Pulseras</a><a href="tobilleras.html">Tobilleras</a>
+                </div>
+                <div>
+                    <h3>Servicio</h3><a href="contacto.html">Contacto</a><a href="nosotros.html#valores">Nuestros
+                        valores</a><a href="nosotros.html#proceso">Cuidado de joyas</a>
+                </div>
+            </div>
+            <div class="footer-bottom"><span>© 2026 LUMA Joyería</span></div>
+        </div>
+    </footer>
+</body>
+
+</html>

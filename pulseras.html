@@ -1,0 +1,658 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <script>(function () {
+            try { var t = localStorage.getItem("luma-theme") === "dark" ? "dark" : "light"; document.documentElement.setAttribute("data-theme", t); } catch (e) { }
+            var silence = function (ev) { try { ev.viewTransition && ev.viewTransition.ready.catch(function () { }); ev.viewTransition && ev.viewTransition.finished.catch(function () { }); } catch (e) { } };
+            window.addEventListener("pageswap", silence);
+            window.addEventListener("pagereveal", silence);
+        })();</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulseras | LUMA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Playfair+Display:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/filters.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <script defer src="js/data/products.js"></script>
+    <script defer src="js/app.js"></script>
+    <script defer src="js/filters.js"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner"><button class="icon-button menu-button" id="open-menu"
+                aria-label="Abrir menú">☰</button><a class="brand" href="index.html">LU<span>•</span>MA</a>
+            <nav class="nav"><a href="index.html">Colecciones</a><a href="aretes.html">Aretes</a><a
+                    href="collares.html">Collares</a><a class="active" href="pulseras.html">Pulseras</a><a
+                    href="tobilleras.html">Tobilleras</a><a href="nosotros.html">Nosotros</a><a
+                    href="contacto.html">Contacto</a></nav>
+            <div class="header-actions"><button class="theme-toggle" type="button" aria-label="Modo oscuro"><span
+                        class="theme-toggle-thumb"></span></button><button class="theme-toggle theme-toggle-icon"
+                    type="button" aria-label="Cambiar modo claro/oscuro"><span class="theme-icon-sun"
+                        aria-hidden="true">☀</span><span class="theme-icon-moon" aria-hidden="true">☾</span></button>
+
+            </div>
+    </header>
+    <div id="drawer-backdrop" class="drawer-backdrop"></div>
+    <aside id="drawer" class="drawer">
+        <div class="drawer-head"><a class="brand" href="index.html">LU<span>•</span>MA</a><button id="close-menu"
+                class="icon-button" aria-label="Cerrar menú">×</button></div>
+        <nav><a href="index.html">Colecciones</a><a href="aretes.html">Aretes</a><a href="collares.html">Collares</a><a
+                class="active" href="pulseras.html">Pulseras</a><a href="tobilleras.html">Tobilleras</a><a
+                href="nosotros.html">Nosotros</a><a href="contacto.html">Contacto</a></nav>
+        <div class="drawer-foot">
+            <span>Modo oscuro</span>
+            <button class="theme-toggle" type="button" aria-label="Modo oscuro"><span
+                    class="theme-toggle-thumb"></span></button>
+        </div>
+    </aside>
+    <main>
+        <section class="page-hero" style="--hero-image:url('../assets/img/pulsera-elegance/cielo-y-mar-1 - copia.png')">
+            <div><span class="eyebrow">Colección LUMA</span>
+                <h1>Pulseras</h1>
+            </div>
+        </section>
+        <section class="section container">
+            <div class="listing-toolbar">
+                <div class="section-heading"><span class="eyebrow">Joyas con intención</span>
+                    <h2>Pulseras que iluminan tu estilo</h2>
+                </div>
+                <p data-product-count>2 Productos</p>
+            </div>
+
+            <div class="tabs" role="tablist">
+                <div class="tabs-left">
+                    <button class="filter-mobile-toggle" type="button" aria-haspopup="true" aria-expanded="false"
+                        aria-controls="filter-groups"><span class="filter-mobile-icon"
+                            aria-hidden="true">⚗</span><span>Filtrar</span></button>
+                    <div class="filter-groups" id="filter-groups">
+                        <div class="filter-group" data-filter-group="grupo1">
+                            <button data-tags="contemporaneas">Contemporáneas<span class="tab-remove"
+                                    aria-label="Quitar filtro">×</span></button>
+                            <button data-tags="culturales">Culturales<span class="tab-remove"
+                                    aria-label="Quitar filtro">×</span></button>
+                        </div>
+                        <div class="filter-group" data-filter-group="grupo2">
+                            <button data-tags="damas">Damas<span class="tab-remove"
+                                    aria-label="Quitar filtro">×</span></button>
+                            <button data-tags="caballeros">Caballeros<span class="tab-remove"
+                                    aria-label="Quitar filtro">×</span></button>
+                            <button data-tags="ninos">Niños<span class="tab-remove"
+                                    aria-label="Quitar filtro">×</span></button>
+                        </div>
+                        <div class="filter-group" data-filter-group="grupo3">
+                            <button data-tags="verano">Verano<span class="tab-remove"
+                                    aria-label="Quitar filtro">×</span></button>
+                            <button data-tags="otoño">Otoño<span class="tab-remove"
+                                    aria-label="Quitar filtro">×</span></button>
+                            <button data-tags="invierno">Invierno<span class="tab-remove"
+                                    aria-label="Quitar filtro">×</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-sort">
+                    <button class="filter-sort-button" type="button" aria-haspopup="true" aria-expanded="false"><span
+                            class="filter-sort-icon" aria-hidden="true">⚗</span><span
+                            data-filter-sort-label="">Ordenar</span></button>
+                    <div class="filter-sort-menu">
+                        <button type="button" data-sort="price-asc">Menor a mayor precio</button>
+                        <button type="button" data-sort="price-desc">Mayor a menor precio</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-grid" data-product-grid>
+
+                <article class="product-card" data-tags="contemporaneas verano caballeros">
+                    <a href="producto.html?producto=pulsera-rio-de-luz">
+                        <img src="assets/img/pulsera-rio-de-luz.png" alt="Pulsera doble Río de Luz">
+
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">
+                                Pulsera doble Río de Luz
+                            </span>
+
+                            <span class="product-card-overlay-desc">
+                                Una delicada pulsera doble inspirada en la luz y la serenidad del río.
+                            </span>
+                        </span>
+                    </a>
+
+                    <div class="product-card-info">
+                        <h3>Pulsera doble Río de Luz</h3>
+                        <p>S/. 55.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card" data-tags="contemporaneas verano caballeros"><a
+                        href="producto.html?producto=pulsera-fuego-interno"><img
+                            src="assets/img/pulsera-hombre/Fuego Interno-1.png" alt="Pulsera Fuego Interno">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Pulsera Fuego Interno</span>
+                            <span class="product-card-overlay-desc">Un amuleto masculino de piedras cálidas y tejido
+                                ajustable,
+                                resguardado por un corazón oscuro que evoca la nobleza del espíritu.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Pulsera Fuego Interno</h3>
+                        <p>S/. 45.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card" data-tags="contemporaneas verano caballeros"><a
+                        href="producto.html?producto=pulsera-armonia-multicolor"><img
+                            src="assets/img/pulsera-hombre/armonia-multicolor-2.png" alt="Pulsera Armonía Multicolor">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Pulsera Armonía Multicolor</span>
+                            <span class="product-card-overlay-desc">Un amuleto multicolor de tejido
+                                ajustable que equilibra la energía diaria con un estilo moderno y versátil.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Pulsera Armonía Multicolor</h3>
+                        <p>S/. 45.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card" data-tags="contemporaneas verano caballeros"><a
+                        href="producto.html?producto=pulsera-arena-y-madero"><img
+                            src="assets/img/pulsera-hombre/arena-y-madero-1.png" alt="Pulsera Arena y Madero">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Pulsera Arena y Madero</span>
+                            <span class="product-card-overlay-desc">Cuentas mates en tono crema con
+                                un centro de ojo de tigre y detalles dorados que reflejan serenidad y equilibrio.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Pulsera Arena y Madero</h3>
+                        <p>S/. 45.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card" data-tags="contemporaneas verano caballeros"><a
+                        href="producto.html?producto=pulsera-ojo-de-tigre-terral"><img
+                            src="assets/img/pulsera-hombre/tigre-terral-1.png" alt="Pulsera Ojo de Tigre Terral">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Pulsera Ojo de Tigre Terral</span>
+                            <span class="product-card-overlay-desc">Sobrias cuentas de ojo de tigre y tonos
+                                tierra tejidas en hilo claro para proyectar elegancia, temple y enfoque.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Pulsera Ojo de Tigre Terral</h3>
+                        <p>S/. 50.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card" data-tags="contemporaneas verano caballeros"><a
+                        href="producto.html?producto=pulsera-sol-de-otoño"><img
+                            src="assets/img/pulsera-hombre/sol-de-otoño-1.png" alt="Pulsera Sol de Otoño">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Pulsera Sol de Otoño</span>
+                            <span class="product-card-overlay-desc">Sobrias cuentas de ojo de tigre y tonos
+                                tierra tejidas en hilo claro para proyectar elegancia, temple y enfoque.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Pulsera Sol de Otoño</h3>
+                        <p>S/. 50.00</p>
+                    </div>
+                </article>
+
+
+                <article class="product-card" data-tags="contemporaneas verano caballeros"><a
+                        href="producto.html?producto=pulsera-destello-dorado"><img
+                            src="assets/img/pulsera-hombre/destello-dorado-2.png" alt="Pulsera Destello Dorado">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Pulsera Destello Dorado</span>
+                            <span class="product-card-overlay-desc">Sobrias cuentas de ojo de tigre y tonos
+                                tierra tejidas en hilo claro para proyectar elegancia, temple y enfoque.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Pulsera Destello Dorado</h3>
+                        <p>S/. 50.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card" data-tags="contemporaneas verano damas"><a
+                        href="producto.html?producto=pulsera-cielo-y-mar"><img
+                            src="assets/img/pulsera-elegance/cielo-y-mar-1.png" alt="Pulsera Cielo y Mar">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Pulsera Cielo y Mar</span>
+                            <span class="product-card-overlay-desc">Un diseño luminoso y
+                                fresco de tejido ajustable que destaca por sus matices dorados y elegancia sutil.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Pulsera Cielo y Mar</h3>
+                        <p>S/. 55.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card" data-tags="contemporaneas verano damas"><a
+                        href="producto.html?producto=pulsera-ojo-protector-dorado"><img
+                            src="assets/img/pulsera-elegance/protector-dorado-1.png" alt="Pulsera Ojo Protector Dorado">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Pulsera Ojo Protector Dorado</span>
+                            <span class="product-card-overlay-desc">Un diseño luminoso y
+                                fresco de tejido ajustable que destaca por sus matices dorados y elegancia sutil.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Pulsera Ojo Protector Dorado</h3>
+                        <p>S/. 55.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card" data-tags="contemporaneas verano damas"><a
+                        href="producto.html?producto=pulsera-corazon-carmesi"><img
+                            src="assets/img/pulsera-elegance/corazon-carmesi-2.png" alt="Pulsera Corazón Carmesí">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Pulsera Corazón Carmesí</span>
+                            <span class="product-card-overlay-desc">Un diseño luminoso y
+                                fresco de tejido ajustable que destaca por sus matices dorados y elegancia sutil.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Pulsera Corazón Carmesí</h3>
+                        <p>S/. 55.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card" data-tags="contemporaneas verano damas"><a
+                        href="producto.html?producto=pulsera-luz-dorada"><img
+                            src="assets/img/pulsera-elegance/luz-dorada-1.png" alt="Pulsera Luz Dorada">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Pulsera Luz Dorada</span>
+                            <span class="product-card-overlay-desc">Un diseño luminoso y
+                                fresco de tejido ajustable que destaca por sus matices dorados y elegancia sutil.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Pulsera Luz Dorada</h3>
+                        <p>S/. 55.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card" data-tags="contemporaneas otoño damas"><a
+                        href="producto.html?producto=pulsera-esencia-terrenal"><img
+                            src="assets/img/pulsera-elegance/esencia-terrenal-1.png" alt="Pulsera Esencia Terrenal">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Pulsera Esencia Terrenal</span>
+                            <span class="product-card-overlay-desc">Una sofisticada combinación de piedras terrosas,
+                                perlas puras y un inicial dorado de carácter único.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Pulsera Esencia Terrenal</h3>
+                        <p>S/. 55.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card" data-tags="contemporaneas invierno damas"><a
+                        href="producto.html?producto=pulsera-pasion-azabache"><img
+                            src="assets/img/pulsera-elegance/pasion-azabache-1.png" alt="Pulsera Pasión Azabache">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Pulsera Pasión Azabache</span>
+                            <span class="product-card-overlay-desc">Un contraste audaz de cuentas rojas y negras con
+                                dijes personalizados en acabado dorado.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Pulsera Pasión Azabache</h3>
+                        <p>S/. 55.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card" data-tags="otoño damas contemporaneas"><a
+                        href="producto.html?producto=pulsera-atardecer-terracota"><img
+                            src="assets/img/pulsera-elegance/atardecer-terracota-1.png"
+                            alt="Pulsera Atardecer Terracota">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Pulsera Atardecer Terracota</span>
+                            <span class="product-card-overlay-desc">Una armoniosa mezcla de ágatas cálidas, texturas
+                                naturales y un dije inicial dorado de elegancia artesanal.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Pulsera Atardecer Terracota</h3>
+                        <p>S/. 55.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card" data-tags="invierno damas contemporaneas"><a
+                        href="producto.html?producto=pulsera-fe-y-malaquita"><img
+                            src="assets/img/pulsera-elegance/fe-y-malaquita-1.png" alt="Pulsera Fe y Malaquita">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Pulsera Fe y Malaquita</span>
+                            <span class="product-card-overlay-desc">Una pieza mística que combina malaquita, perlas y
+                                ópalo con delicados dijes dorados de fe y personalización.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Pulsera Fe y Malaquita</h3>
+                        <p>S/. 55.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card" data-tags="otoño damas contemporaneas"><a
+                        href="producto.html?producto=pulsera-armonia-madera"><img
+                            src="assets/img/pulsera-elegance/armonia-madera-1.png" alt="Pulsera Armonía Madera">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Pulsera Armonía Madera</span>
+                            <span class="product-card-overlay-desc">Un diseño cálido de madera natural y piedras
+                                protectoras con un refinado dije circular de inicial.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Pulsera Armonía Madera</h3>
+                        <p>S/. 55.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card" data-tags="invierno damas contemporaneas"><a
+                        href="producto.html?producto=pulsera-cruz-sombra-dorada"><img
+                            src="assets/img/pulsera-tejida/cruz-sombra-dorada-1.png" alt="Pulsera Cruz Sombra Dorada">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Pulsera Cruz Sombra Dorada</span>
+                            <span class="product-card-overlay-desc">Un artesanal tejido macramé negro con un dije
+                                central de cruz y balines en acabado dorado.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Pulsera Cruz Sombra Dorada</h3>
+                        <p>S/. 45.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card" data-tags="primavera damas contemporaneas"><a
+                        href="producto.html?producto=pulsera-trebol-arena-rose"><img
+                            src="assets/img/pulsera-tejida/trebol-arena-rose-1.png" alt="Pulsera Trébol Arena Rosé">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Pulsera Trébol Arena Rosé</span>
+                            <span class="product-card-overlay-desc">Un fino tejido macramé neutro con dije central de
+                                trébol y detalles metálicos en tono oro rosa.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Pulsera Trébol Arena Rosé</h3>
+                        <p>S/. 45.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card" data-tags="primavera damas contemporaneas"><a
+                        href="producto.html?producto=pulsera-corazon-rojo-dorado"><img
+                            src="assets/img/pulsera-tejida/corazon-rojo-dorado-2.png" alt="Pulsera Corazón Rojo Dorado">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Pulsera Corazón Rojo Dorado</span>
+                            <span class="product-card-overlay-desc">Un sutil poema carmesí tejido al pulso de la piel,
+                                guardián de afectos y reflejos dorados.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Pulsera Corazón Rojo Dorado</h3>
+                        <p>S/. 45.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card" data-tags="primavera damas contemporaneas"><a
+                        href="producto.html?producto=pulsera-infinito-albor-dorado"><img
+                            src="assets/img/pulsera-tejida/infinito-albor-dorado-1.png"
+                            alt="Pulsera Infinito Albór Dorado">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Pulsera Infinito Albór Dorado</span>
+                            <span class="product-card-overlay-desc">Un tejido de pureza alba acentuado por el destello
+                                eterno de un infinito dorado.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Pulsera Infinito Albór Dorado</h3>
+                        <p>S/. 45.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card" data-tags="invierno damas contemporaneas"><a
+                        href="producto.html?producto=pulsera-cruz-carmesi-dorada"><img
+                            src="assets/img/pulsera-tejida/cruz-carmesi-dorada-1.png" alt="Pulsera Cruz Carmesí Dorada">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Pulsera Cruz Carmesí Dorada</span>
+                            <span class="product-card-overlay-desc">Un ferviente entramado carmesí iluminado por la
+                                sobria presencia de una cruz dorada.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Pulsera Cruz Carmesí Dorada</h3>
+                        <p>S/. 45.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card" data-tags="otoño damas contemporaneas"><a
+                        href="producto.html?producto=pulsera-infinito-azabache-dorado"><img
+                            src="assets/img/pulsera-tejida/infinito-azabache-dorado-1.png"
+                            alt="Pulsera Infinito Azabache Dorado">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Pulsera Infinito Azabache Dorado</span>
+                            <span class="product-card-overlay-desc">Un elegante lazo de sombra azabache que abraza la
+                                promesa eterna de un infinito dorado.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Pulsera Infinito Azabache Dorado</h3>
+                        <p>S/. 45.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card" data-tags="primavera damas contemporaneas"><a
+                        href="producto.html?producto=pulsera-trebol-menta-silvestre"><img
+                            src="assets/img/pulsera-juvenil/trebol-menta-silvestre-1.png"
+                            alt="Pulsera Trébol Menta Silvestre">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Pulsera Trébol Menta Silvestre</span>
+                            <span class="product-card-overlay-desc">Un fresco suspiro de hilo menta y cristales
+                                luminosos guardando un amuleto de buena fortuna.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Pulsera Trébol Menta Silvestre</h3>
+                        <p>S/. 45.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card" data-tags="primavera damas contemporaneas"><a
+                        href="producto.html?producto=pulsera-amor-familiar-dorado"><img
+                            src="assets/img/pulsera-juvenil/amor-familiar-dorado-1.png"
+                            alt="Pulsera Amor Familiar Dorado">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Pulsera Amor Familiar Dorado</span>
+                            <span class="product-card-overlay-desc">Un abrazo de oro y circones brillante que guarda en
+                                la piel la esencia viva del amor familiar.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Pulsera Amor Familiar Dorado</h3>
+                        <p>S/. 55.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card" data-tags="verano damas contemporaneas"><a
+                        href="producto.html?producto=pulsera-inicial-turquesa-brisa"><img
+                            src="assets/img/pulsera-juvenil/inicial-turquesa-brisa-1.png"
+                            alt="Pulsera Inicial Turquesa Brisa">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Pulsera Inicial Turquesa Brisa</span>
+                            <span class="product-card-overlay-desc">Un fresco abrazo turquesa y destellos de la mar
+                                guardando el eco de una inicial única.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Pulsera Inicial Turquesa Brisa</h3>
+                        <p>S/. 45.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card" data-tags="otoño damas contemporaneas"><a
+                        href="producto.html?producto=pulsera-inicial-amatista-mística"><img
+                            src="assets/img/pulsera-juvenil/inicial-amatista-mistica-2.png"
+                            alt="Pulsera Inicial Amatista Mística">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Pulsera Inicial Amatista Mística</span>
+                            <span class="product-card-overlay-desc">Un misterioso cielo morado de minerales guardando el
+                                fulgor único de una inicial dorada.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Pulsera Inicial Amatista Mística</h3>
+                        <p>S/. 45.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card" data-tags="primavera damas contemporaneas"><a
+                        href="producto.html?producto=pulsera-mariposa-azabache-primavera"><img
+                            src="assets/img/pulsera-juvenil/mariposa-azabache-primavera-1.png"
+                            alt="Pulsera Mariposa Azabache Primavera">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Pulsera Mariposa Azabache Primavera</span>
+                            <span class="product-card-overlay-desc">Un sutil vuelo de perlas y destellos olivo mecidos
+                                por el encanto de una mariposa azabache.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Pulsera Mariposa Azabache Primavera</h3>
+                        <p>S/. 48.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card" data-tags="invierno damas contemporaneas"><a
+                        href="producto.html?producto=pulsera-destello-lunar-plata"><img
+                            src="assets/img/pulsera-juvenil/destello-lunar-plata-1.png"
+                            alt="Pulsera Destello Lunar Plata">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Pulsera Destello Lunar Plata</span>
+                            <span class="product-card-overlay-desc">Un doble halo de luz nacarada y destellos argénteos
+                                que celebran la serenidad de la noche.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Pulsera Destello Lunar Plata</h3>
+                        <p>S/. 45.00</p>
+                    </div>
+                </article>
+
+
+
+                <article class="product-card" data-tags="invierno damas contemporaneas"><a
+                        href="producto.html?producto=pulsera-latido-carmesi"><img
+                            src="assets/img/pulsera-juvenil/latido-carmesi-1.png" alt="Pulsera Latido Carmesí">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Pulsera Latido Carmesí</span>
+                            <span class="product-card-overlay-desc">Un ardiente ritmo de cristales carmesí y sombras
+                                metalizadas custodiando un corazón de oro.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Pulsera Latido Carmesí</h3>
+                        <p>S/. 48.00</p>
+                    </div>
+                </article>
+
+
+                <article class="product-card" data-tags="otoño damas contemporaneas"><a
+                        href="producto.html?producto=pulsera-sombra-bronce-amor"><img
+                            src="assets/img/pulsera-juvenil/sombra-bronce-amor-1.png" alt="Pulsera Sombra Bronce Amor">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Pulsera Sombra Bronce Amor</span>
+                            <span class="product-card-overlay-desc">Un misterioso manto de cristales tornasolados que
+                                resguarda el tierno abrazo del bronce.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Pulsera Sombra Bronce Amor</h3>
+                        <p>S/. 48.00</p>
+                    </div>
+                </article>
+
+
+                <article class="product-card" data-tags="verano damas culturales"><a
+                        href="producto.html?producto=pulsera-mar-lunar-estrellas"><img
+                            src="assets/img/tradicional/mar-lunar-estrellas-1.png" alt="Pulsera Mar Lunar Estrellas">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Pulsera Mar Lunar Estrellas</span>
+                            <span class="product-card-overlay-desc">Un dúo de pulseras inspiradas en el mar, con
+                                estrellas y destellos lilas que encantan.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Pulsera Mar Lunar Estrellas</h3>
+                        <p>S/. 45.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card" data-tags="verano damas culturales"><a
+                        href="producto.html?producto=pulsera-caracol-marino-aurora"><img
+                            src="assets/img/tradicional/caracol-marino-aurora-1.png"
+                            alt="Pulsera Caracol Marino Aurora">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Pulsera Caracol Marino Aurora</span>
+                            <span class="product-card-overlay-desc">Un elegante caracol y estrellas marinas entrelazadas
+                                con destellos dorados y luz natural.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Pulsera Caracol Marino Aurora</h3>
+                        <p>S/. 48.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card" data-tags="verano damas culturales"><a
+                        href="producto.html?producto=pulsera-concha-marina-estelar"><img
+                            src="assets/img/tradicional/concha-marina-estelar-1.png"
+                            alt="Pulsera Concha Marina Estelar">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Pulsera Concha Marina Estelar</span>
+                            <span class="product-card-overlay-desc">Una concha marina y estrellas entrelazadas que
+                                evocan la magia del mar en tu muñeca.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Pulsera Concha Marina Estelar</h3>
+                        <p>S/. 46.00</p>
+                    </div>
+                </article>
+
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div><a class="brand" href="index.html">LU<span>•</span>MA</a>
+                    <p>Joyería artesanal que celebra la belleza de las piedras, los detalles y las historias que nos
+                        acompañan.</p>
+                </div>
+                <div>
+                    <h3>Explorar</h3><a href="aretes.html">Aretes</a><a href="collares.html">Collares</a><a
+                        href="pulseras.html">Pulseras</a><a href="tobilleras.html">Tobilleras</a>
+                </div>
+                <div>
+                    <h3>Servicio</h3><a href="contacto.html">Contacto</a><a href="nosotros.html#valores">Nuestros
+                        valores</a><a href="nosotros.html#proceso">Cuidado de joyas</a>
+                </div>
+            </div>
+            <div class="footer-bottom"><span>© 2026 LUMA Joyería</span></div>
+        </div>
+    </footer>
+</body>
+
+</html>

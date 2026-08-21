@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <script>(function () { try { var t = localStorage.getItem("luma-theme") === "dark" ? "dark" : "light"; document.documentElement.setAttribute("data-theme", t); } catch (e) { } })();</script>
+    <meta charset="UTF-8">
+    </meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </meta>
+    <title>Aretes | LUMA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    </link>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    </link>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Playfair+Display:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    </link>
+    <link rel="stylesheet" href="css/variables.css">
+    </link>
+    <link rel="stylesheet" href="css/base.css">
+    </link>
+    <link rel="stylesheet" href="css/components.css">
+    </link>
+    <link rel="stylesheet" href="css/pages.css">
+    </link>
+    <link rel="stylesheet" href="css/filters.css">
+    </link>
+    <link rel="stylesheet" href="css/mobile.css">
+    <script defer="" src="js/data/products.js"></script>
+    <script defer="" src="js/app.js"></script>
+    <script defer="" src="js/filters.js"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <button class="icon-button menu-button" id="open-menu" aria-label="Abrir menú">☰</button>
+            <a class="brand" href="index.html">LU<span>•</span>MA</a>
+            <nav class="nav">
+                <a href="index.html">Colecciones</a>
+                <a class="active" href="aretes.html">Aretes</a>
+                <a href="collares.html">Collares</a>
+                <a href="pulseras.html">Pulseras</a>
+                <a href="tobilleras.html">Tobilleras</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+            <div class="header-actions"><button class="theme-toggle" type="button" aria-label="Modo oscuro"><span
+                        class="theme-toggle-thumb"></span></button><button class="theme-toggle theme-toggle-icon"
+                    type="button" aria-label="Cambiar modo claro/oscuro"><span class="theme-icon-sun"
+                        aria-hidden="true">☀</span><span class="theme-icon-moon" aria-hidden="true">☾</span></button>
+
+            </div>
+    </header>
+
+    <div id="drawer-backdrop" class="drawer-backdrop"></div>
+    <aside id="drawer" class="drawer">
+        <div class="drawer-head">
+            <a class="brand" href="index.html">LU<span>•</span>MA</a>
+            <button id="close-menu" class="icon-button" aria-label="Cerrar menú">×</button>
+        </div>
+        <nav>
+            <a href="index.html">Colecciones</a>
+            <a class="active" href="aretes.html">Aretes</a>
+            <a href="collares.html">Collares</a>
+            <a href="pulseras.html">Pulseras</a>
+            <a href="tobilleras.html">Tobilleras</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <div class="drawer-foot">
+            <span>Modo oscuro</span>
+            <button class="theme-toggle" type="button" aria-label="Modo oscuro"><span
+                    class="theme-toggle-thumb"></span></button>
+        </div>
+    </aside>
+    <main>
+        <section class="page-hero" style="--hero-image:url('../assets/img/ARETES/7-2 - copia.png')">
+            <div>
+                <span class="eyebrow">Colección LUMA</span>
+                <h1>Aretes</h1>
+            </div>
+        </section>
+
+        <section class="section container">
+
+            <div class="listing-toolbar">
+                <div class="section-heading">
+                    <span class="eyebrow">Joyas con intención</span>
+                    <h2>Aretes que iluminan tu estilo</h2>
+                </div>
+                <p data-product-count="">2 Productos</p>
+            </div>
+
+            <div class="tabs" role="tablist">
+                <div class="tabs-left">
+                    <button class="filter-mobile-toggle" type="button" aria-haspopup="true" aria-expanded="false"
+                        aria-controls="filter-groups"><span class="filter-mobile-icon"
+                            aria-hidden="true">⚗</span><span>Filtrar</span></button>
+                    <div class="filter-groups" id="filter-groups">
+                        <div class="filter-group" data-filter-group="grupo1">
+                            <button data-tags="contemporaneas">Contemporáneas<span class="tab-remove"
+                                    aria-label="Quitar filtro">×</span></button>
+                            <button data-tags="culturales">Culturales<span class="tab-remove"
+                                    aria-label="Quitar filtro">×</span></button>
+                        </div>
+                        <div class="filter-group" data-filter-group="grupo2">
+                            <button data-tags="damas">Damas<span class="tab-remove"
+                                    aria-label="Quitar filtro">×</span></button>
+                            <button data-tags="caballeros">Caballeros<span class="tab-remove"
+                                    aria-label="Quitar filtro">×</span></button>
+                            <button data-tags="ninos">Niños<span class="tab-remove"
+                                    aria-label="Quitar filtro">×</span></button>
+                        </div>
+                        <div class="filter-group" data-filter-group="grupo3">
+                            <button data-tags="verano">Verano<span class="tab-remove"
+                                    aria-label="Quitar filtro">×</span></button>
+                            <button data-tags="otoño">Otoño<span class="tab-remove"
+                                    aria-label="Quitar filtro">×</span></button>
+                            <button data-tags="invierno">Invierno<span class="tab-remove"
+                                    aria-label="Quitar filtro">×</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-sort">
+                    <button class="filter-sort-button" type="button" aria-haspopup="true" aria-expanded="false"><span
+                            class="filter-sort-icon" aria-hidden="true">⚗</span><span
+                            data-filter-sort-label="">Ordenar</span></button>
+                    <div class="filter-sort-menu">
+                        <button type="button" data-sort="price-asc">Menor a mayor precio</button>
+                        <button type="button" data-sort="price-desc">Mayor a menor precio</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-grid" data-product-grid="">
+
+                <article class="product-card" data-tags="verano damas contemporaneas">
+                    <a href="producto.html?producto=aretes-brisa-serena"><img src="assets/img/aretes-brisa-serena.png"
+                            alt="Aretes Brisa Serena"></img><span class="product-card-overlay"><span
+                                class="product-card-overlay-name">Aretes Brisa Serena</span><span
+                                class="product-card-overlay-desc">Piedras naturales talladas a mano con baño de
+                                oro.</span></span></a>
+                    <div class="product-card-info">
+                        <h3>Aretes Brisa Serena</h3>
+                        <p>S/. 30.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card" data-tags="contemporaneas invierno damas">
+                    <a href="producto.html?producto=aretes-cascada-perlas"><img
+                            src="assets/img/aretes-cascada-perlas.png" alt="Aretes Cascada de Perlas"></img><span
+                            class="product-card-overlay"><span class="product-card-overlay-name">Aretes Cascada de
+                                Perlas</span><span class="product-card-overlay-desc">Elegantes perlas que aportan un
+                                toque delicado y sofisticado.</span></span></a>
+                    <div class="product-card-info">
+                        <h3>Aretes Cascada de Perlas</h3>
+                        <p>S/. 35.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card" data-tags="verano damas aretes"><a
+                        href="producto.html?producto=aretes-cascada-perlas-neptuno"><img
+                            src="assets/img/aretes/cascada-perlas-neptuno-2.png" alt="Aretes Cascada Perlas Neptuno">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Aretes Cascada Perlas Neptuno</span>
+                            <span class="product-card-overlay-desc">Un fluir de oro y perlas cultivadas que descienden
+                                con una gracia inigualable.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Aretes Cascada Perlas Neptuno</h3>
+                        <p>S/. 55.00</p>
+                    </div>
+                </article>
+
+
+                <article class="product-card" data-tags="primavera damas aretes"><a
+                        href="producto.html?producto=aretes-racimo-perlas-aurora"><img
+                            src="assets/img/aretes/racimo-perlas-aurora-1.png" alt="Aretes Racimo Perlas Aurora">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Aretes Racimo Perlas Aurora</span>
+                            <span class="product-card-overlay-desc">Un deslumbrante racimo de perlas y destellos dorados
+                                que bailan con cada movimiento.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Aretes Racimo Perlas Aurora</h3>
+                        <p>S/. 58.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card" data-tags="invierno damas aretes"><a
+                        href="producto.html?producto=aretes-elefante-fe-dorada"><img
+                            src="assets/img/aretes/elefante-fe-dorada-2.png" alt="Aretes Elefante Fe Dorada">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Aretes Elefante Fe Dorada</span>
+                            <span class="product-card-overlay-desc">Una armónica fusión de fe y protección en destellos
+                                dorados y detalles de ónix.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Aretes Elefante Fe Dorada</h3>
+                        <p>S/. 52.00</p>
+                    </div>
+                </article>
+
+
+                <article class="product-card" data-tags="invierno damas aretes"><a
+                        href="producto.html?producto=aretes-realeza-dorada-perla"><img
+                            src="assets/img/aretes/realeza-dorada-perla-1.png" alt="Aretes Realeza Dorada Perla">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Aretes Realeza Dorada Perla</span>
+                            <span class="product-card-overlay-desc">Una cascada de filigrana dorada y circones que
+                                culmina en la sublime belleza de una perla real.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Aretes Realeza Dorada Perla</h3>
+                        <p>S/. 62.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card" data-tags="primavera damas aretes"><a
+                        href="producto.html?producto=aretes-cascada-perlas-rosa"><img
+                            src="assets/img/aretes/cascada-perlas-rosa-1.png" alt="Aretes Cascada Perlas Rosa">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Aretes Cascada Perlas Rosa</span>
+                            <span class="product-card-overlay-desc">Un radiante racimo de filigrana y cadenas que
+                                destellan con suaves perlas rosadas.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Aretes Cascada Perlas Rosa</h3>
+                        <p>S/. 58.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card" data-tags="otoño damas aretes"><a
+                        href="producto.html?producto=aretes-hoja-ginkgo-dorada"><img
+                            src="assets/img/aretes/hoja-ginkgo-dorada-1.png" alt="Aretes Hoja Ginkgo Dorada">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Aretes Hoja Ginkgo Dorada</span>
+                            <span class="product-card-overlay-desc">Un destello ámbar y la serena belleza de la hoja de
+                                Ginkgo meciéndose con elegancia.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Aretes Hoja Ginkgo Dorada</h3>
+                        <p>S/. 52.00</p>
+                    </div>
+                </article>
+
+                <article class="product-card" data-tags="verano damas culturales"><a
+                        href="producto.html?producto=aretes-cascada-natural-jade"><img
+                            src="assets/img/tradicional/cascada-natural-jade-1.png" alt="Aretes Cascada Natural Jade">
+                        <span class="product-card-overlay">
+                            <span class="product-card-overlay-name">Aretes Cascada Natural Jade</span>
+                            <span class="product-card-overlay-desc">Una radiante cascada de jade natural que ilumina tu
+                                rostro con elegancia artesanal.</span>
+                        </span>
+                    </a>
+                    <div class="product-card-info">
+                        <h3>Aretes Cascada Natural Jade</h3>
+                        <p>S/. 52.00</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+
+                <div>
+                    <a class="brand" href="index.html">LU<span>•</span>MA</a>
+                    <p>Joyería artesanal que celebra la belleza de las piedras,
+                        los detalles y las historias que nos acompañan.</p>
+                </div>
+
+                <div>
+                    <h3>Explorar</h3>
+                    <a href="aretes.html">Aretes</a>
+                    <a href="collares.html">Collares</a>
+                    <a href="pulseras.html">Pulseras</a>
+                    <a href="tobilleras.html">Tobilleras</a>
+                </div>
+
+                <div>
+                    <h3>Servicio</h3>
+                    <a href="contacto.html">Contacto</a>
+                    <a href="nosotros.html#valores">Nuestros valores</a>
+                    <a href="nosotros.html#proceso">Cuidado de joyas</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <span>© 2026 LUMA Joyería</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
